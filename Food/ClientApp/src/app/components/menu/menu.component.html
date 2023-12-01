@@ -1,0 +1,11 @@
+<h1>Menu</h1>
+<br />
+
+<ul>
+    <li *ngFor="let m of menuResult">
+        <a routerLink="menu-details/{{m.name}}">
+        {{ m.name }}</a> - {{ m.price | currency }}
+        <!-- <button (click)="DeleteMenuName(m.name)">Delete</button> -->
+    </li>
+    
+</ul>
